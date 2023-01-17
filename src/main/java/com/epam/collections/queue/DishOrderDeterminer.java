@@ -8,9 +8,7 @@ import java.util.Queue;
 public class DishOrderDeterminer {
     public static void main(String[] args) {
         DishOrderDeterminer dishOrderDeterminer = new DishOrderDeterminer();
-//        dishOrderDeterminer.determineDishOrder(10, 3);
         dishOrderDeterminer.determineDishOrder(11, 4);
-
     }
 
     public List<Integer> determineDishOrder(int numberOfDishes, int everyDishNumberToEat) {
@@ -36,13 +34,7 @@ public class DishOrderDeterminer {
             }
         tempInitialOrder.removeAll(toRemove);
         initialOrder = tempInitialOrder;
-        System.out.println(initialOrder);
-//            for (int i = 1; i <= initialOrder.size(); i++) {
-//                if (i % 3 == 0) {
-//                    Integer elementToRemove = initialOrder.element();
-//                    determinedOrder.add(initialOrder.remove(i))
         }
-        System.out.println(determinedOrder);
         return determinedOrder;
     }
 }
